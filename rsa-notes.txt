@@ -1,0 +1,37 @@
+What is Asymmetric Encryption?
+-> 1) you use two different keys one for encryption and other for decryption.
+   2) The key used for encryption is the public key and the key used for decryption is the private key 
+	
+   e.g. If Alice needs to send a message Bob both the keys must be belongs to Bob.
+
+   // The process for the above exampe is : 
+	a) Alice uses Bob's public key to encrypt the message
+	b) The encrypted message is sent to Bob
+	c) Bob uses his private key to decrypt the message
+
+   // The above process elimintes the need to exchange any secrete key between the sender and the receiver
+
+
+What are the digital signatures ? 
+-> 1) Digital signatures server the purpose of the authentication and the verification of documents and the files.
+   2) They work on the public key cryptography architecture 
+   3) In the digital signature it is opposite to the asymmetric encryption that is private key is used to encryption and public key is used to decryption.
+	
+   // The process for the digital signature
+	a) M (Plaintext) original message it is first passed inot hash function denotes by H# to scramble the data before transmission
+	b) It then bundle the message together with the hash digest denoted by h and encrypts it using the sender's private key
+	c) It sends the encrypted bundle of the message and digest to the reveiver who decrypts is using the sender's private key
+	d) Once decrytped it passes the message through the same hash functino (H#) to generate the hash digest again
+	e) It compares the newly generated hash with the hash receiver in the decrypted bundle. If they mathc it verifies the data integrity
+
+  // There are two industry standerd ways to implements the above methodology :
+	1) RSA Algorithm 
+	2) DSA Algorithm
+ 
+
+What is RSA Algorithm ?
+-> 1) The RSA algorithm is a public-key signature algorithm develop by Ron Rivest , Adi Shamir and Leonard Adleman
+   2) It is asymmetric encryption uses.
+   3) There are two broad components when it comes to RSA cryptography they are :
+	a) Key Generations : Generating the keys to be used for encrypting and decrypting the data to exchanges
+	b) Encryption/Decryption : The steps that need to run when scrambling and recovering the data.

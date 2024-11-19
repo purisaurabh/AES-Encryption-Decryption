@@ -1,0 +1,20 @@
+What is AES (Advanced Encryption Standerd)?
+-> 1) AES is type of cypher (convert the readable(plaintext) information to unreadable(cyphertext)) that protext the transfer of data through the internet
+   2) AES is a symmetric encryption method meaning it used the same key to encrypt data as it does to decrypt data
+   3) It also applied multiple rounds of the SPN(Substitution Permutation Network) Algorithm to encrypt the data.
+   4) There are three possible lenght of AES keys. Each keys lenght offers a different number of possible key combinations
+   5) The higher the bit rate of the AES encryption the more possibilities there are and the higher the security.
+   6) AES is Cipher Block
+   7) The key size can 128/192/256 bits
+   8) Encrypts the data in block of 128 bits each that means it takes 128 bits as an input and outputs 128 buts of encrypted cipher text.
+   9) AES relies on the SPN principle which is performed using the series of linked operations that involved replacing and shuffling the input
+   
+Working : 
+	a) AES perform operations on bytes of data rather than bits. Since the block size is 128 bits the cipher processes 128 bits(16 bytes) if the input data 
+	   at a time
+	b) The number of rounds depends upon the key lenght : 
+		1) 128 bit key : 10 rounds
+		2) 192 bit key : 12 rounds
+		3) 156 bit key : 14 rounds
+
+
